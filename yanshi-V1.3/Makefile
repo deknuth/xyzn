@@ -1,6 +1,6 @@
 CC = gcc
 XX = g++
-CFLAGS = -Wall -O -I/usr/include  -L/usr/lib 
+CFLAGS = -Wall -O -I/usr/include -L. -L/usr/lib
 CTD = -I$(ORACLE_INCLUDES)  -L$(ORACLE_LIBS)
 TARGET = auto
 %.o: %.c

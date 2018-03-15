@@ -130,7 +130,7 @@ int main(int argc, char ** argv)
 
     if(pthread_create(&id7,NULL,(void *)TcpServer,(void *)TCP_PORT) != 0)
         lprintf(lfd,FATAL,"Socket server thread creation failure!");
-#if 0
+#if 1
     pthread_join(id1,NULL);
     pthread_join(id2,NULL);
     pthread_join(id3,NULL);
